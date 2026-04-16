@@ -290,25 +290,87 @@
 
     <!-- ═══ FOOTER ═══ -->
     <footer class="footer">
+        <div class="footer-wave">
+            <svg viewBox="0 0 1440 100" preserveAspectRatio="none"><path d="M0,50 C360,100 720,0 1080,50 C1260,75 1380,40 1440,50 L1440,100 L0,100Z" fill="currentColor"/></svg>
+        </div>
         <div class="container">
-            <div class="footer-top">
+            <div class="footer-grid">
+
+                <!-- Brand -->
                 <div class="footer-brand">
-                    <h3>☕ Hanoosh <span>Café</span></h3>
-                    <p>Crafted with care in Hargeisa, Somaliland.</p>
+                    <div class="footer-logo">
+                        <span class="logo-mark">H</span>
+                        <div>
+                            <div class="logo-text">Hanoosh <em>Café</em></div>
+                            <div class="footer-tagline">Since 2021 · Hargeisa</div>
+                        </div>
+                    </div>
+                    <p class="footer-desc">Crafted with care in the heart of Hargeisa. Premium coffee, fresh food, and a warm atmosphere for every guest.</p>
                 </div>
-                <div class="footer-nav"><a href="#accueil">Home</a><a href="#menu">Menu</a><a
-                        href="#galerie">Gallery</a><a href="#apropos">About</a><a href="#contact">Contact</a></div>
-                <div class="footer-social">
-                    <a href="https://instagram.com/hanoosh.cafe" target="_blank">IG</a>
-                    <a href="https://tiktok.com/@hanoosh_cafe" target="_blank">TK</a>
-                    <a href="https://snapchat.com/@hanooshmohasn" target="_blank">SC</a>
-                    <a href="#">FB</a>
+
+                <!-- Quick Links -->
+                <div class="footer-col">
+                    <h4>Explore</h4>
+                    <nav class="footer-links">
+                        <a href="#accueil">Home</a>
+                        <a href="#menu">Menu</a>
+                        <a href="#galerie">Gallery</a>
+                        <a href="#apropos">About</a>
+                        <a href="#avis">Reviews</a>
+                        <a href="#contact">Contact</a>
+                    </nav>
                 </div>
+
+                <!-- Contact info -->
+                <div class="footer-col">
+                    <h4>Visit Us</h4>
+                    <div class="footer-info">
+                        <div class="fi-row">
+                            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                            <span>Jigjiga Yar, Opp. Sun Hotel<br>Hargeisa, Somaliland</span>
+                        </div>
+                        <div class="fi-row">
+                            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                            <span>+252 63 573999</span>
+                        </div>
+                        <div class="fi-row">
+                            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                            <span>Open daily 7 AM – 11 PM</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Social -->
+                <div class="footer-col">
+                    <h4>Follow Us</h4>
+                    <div class="footer-socials">
+                        <a href="https://instagram.com/hanoosh.cafe" target="_blank" class="social-icon si-insta" aria-label="Instagram">
+                            <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22"><path clip-rule="evenodd" d="M3 8a5 5 0 0 1 5-5h8a5 5 0 0 1 5 5v8a5 5 0 0 1-5 5H8a5 5 0 0 1-5-5V8Zm5-3a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3V8a3 3 0 0 0-3-3H8Zm7.597 2.214a1 1 0 0 1 1-1h.01a1 1 0 1 1 0 2h-.01a1 1 0 0 1-1-1ZM12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6Zm-5 3a5 5 0 1 1 10 0 5 5 0 0 1-10 0Z" fill-rule="evenodd"/></svg>
+                            <span class="si-tooltip">Instagram</span>
+                        </a>
+                        <a href="https://tiktok.com/@hanoosh_cafe" target="_blank" class="social-icon si-tiktok" aria-label="TikTok">
+                            <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .56.04.82.12v-3.5a6.37 6.37 0 0 0-.82-.05A6.34 6.34 0 0 0 3.15 15a6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.34-6.34V9.17a8.16 8.16 0 0 0 4.76 1.53v-3.5a4.85 4.85 0 0 1-1-.51z"/></svg>
+                            <span class="si-tooltip">TikTok</span>
+                        </a>
+                        <a href="https://snapchat.com/@hanooshmohasn" target="_blank" class="social-icon si-snap" aria-label="Snapchat">
+                            <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22"><path d="M12.166 3c1.672 0 3.248.824 4.221 2.202.628.888.845 1.756.845 3.504 0 .407-.019.82-.047 1.15.173.066.352.1.535.1.324 0 .576-.09.796-.283a.53.53 0 0 1 .39-.147c.148 0 .31.065.453.135.224.11.394.292.394.536 0 .47-.534.86-1.164 1.08-.135.047-.296.094-.465.135a.66.66 0 0 0-.485.528c-.016.091-.008.18.024.265.485 1.122 1.372 2.068 2.49 2.65.27.14.56.247.862.317.25.058.41.232.41.445 0 .46-.73.79-1.284.934-.106.027-.19.047-.25.066-.178.057-.212.143-.264.324-.03.105-.075.26-.201.434-.175.242-.45.344-.784.344-.231 0-.498-.044-.812-.134a5.723 5.723 0 0 0-1.31-.182c-.205 0-.426.02-.66.058-.443.073-.841.337-1.297.637C14.88 18.58 14.095 19 12.166 19c-1.929 0-2.716-.42-3.47-.927-.457-.306-.857-.57-1.303-.643a4.408 4.408 0 0 0-.666-.06c-.507 0-.897.085-1.305.18-.315.092-.585.137-.82.137-.374 0-.614-.129-.77-.338-.122-.163-.168-.32-.198-.428-.055-.196-.09-.274-.27-.332-.057-.019-.14-.038-.247-.066-.553-.143-1.283-.473-1.283-.935 0-.213.159-.387.41-.445.302-.07.592-.177.862-.317 1.118-.582 2.006-1.528 2.49-2.65a.544.544 0 0 0 .024-.265.66.66 0 0 0-.485-.529c-.17-.04-.33-.087-.465-.134-.63-.22-1.164-.61-1.164-1.08 0-.244.17-.427.394-.536a.895.895 0 0 1 .453-.135c.15 0 .287.053.39.147.22.193.472.283.796.283.183 0 .362-.034.535-.1a12.91 12.91 0 0 1-.047-1.15c0-1.748.217-2.616.845-3.504C8.918 3.824 10.494 3 12.166 3z"/></svg>
+                            <span class="si-tooltip">Snapchat</span>
+                        </a>
+                        <a href="https://wa.me/25263573999" target="_blank" class="social-icon si-whatsapp" aria-label="WhatsApp">
+                            <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22"><path fill-rule="evenodd" clip-rule="evenodd" d="M18.403 5.633A8.919 8.919 0 0 0 12.053 3c-4.948 0-8.976 4.027-8.978 8.977 0 1.582.413 3.126 1.198 4.488L3 21.116l4.759-1.249a8.981 8.981 0 0 0 4.29 1.093h.004c4.947 0 8.975-4.027 8.977-8.977a8.926 8.926 0 0 0-2.627-6.35m-6.35 13.812h-.003a7.446 7.446 0 0 1-3.798-1.041l-.272-.162-2.824.741.753-2.753-.177-.282a7.448 7.448 0 0 1-1.141-3.971c.002-4.114 3.349-7.461 7.465-7.461a7.413 7.413 0 0 1 5.275 2.188 7.42 7.42 0 0 1 2.183 5.279c-.002 4.114-3.349 7.462-7.461 7.462m4.093-5.589c-.225-.113-1.327-.655-1.533-.73-.205-.075-.354-.112-.504.112s-.58.729-.711.879-.262.168-.486.056-.947-.349-1.804-1.113c-.667-.595-1.117-1.329-1.248-1.554s-.014-.346.099-.458c.101-.1.224-.262.336-.393.112-.131.149-.224.224-.374s.038-.281-.019-.393c-.056-.113-.505-1.217-.692-1.666-.181-.435-.366-.377-.504-.383a9.65 9.65 0 0 0-.429-.008.826.826 0 0 0-.599.28c-.206.225-.785.767-.785 1.871s.804 2.171.916 2.321c.112.15 1.582 2.415 3.832 3.387.536.231.954.369 1.279.473.537.171 1.026.146 1.413.089.431-.064 1.327-.542 1.514-1.066.187-.524.187-.973.131-1.067-.056-.094-.207-.151-.43-.263"/></svg>
+                            <span class="si-tooltip">WhatsApp</span>
+                        </a>
+                    </div>
+                </div>
+
             </div>
+
             <div class="footer-bottom">
                 <p>&copy; 2026 Hanoosh Café — All rights reserved.</p>
-                <a href="settings.html" class="footer-admin">⚙️ Admin</a>
-                <a href="orders.html" class="footer-admin">👨‍🍳 Kitchen</a>
+                <div class="footer-admin-wrap">
+                    <a href="settings.html" class="footer-admin">⚙️ Admin</a>
+                    <a href="orders.html" class="footer-admin">👨‍🍳 Kitchen</a>
+                </div>
             </div>
         </div>
     </footer>
