@@ -3132,14 +3132,12 @@ ul {
 
 /* ═══════ RESPONSIVE ═══════ */
 @media(max-width:1024px) {
-    .categories-grid { grid-template-columns: repeat(3, 1fr) }
     .menu-grid { grid-template-columns: repeat(2, 1fr) }
     .galerie-grid { grid-template-columns: repeat(2, 1fr); grid-auto-rows: 180px }
     .galerie-tall { grid-row: span 2 }
     .apropos-grid { grid-template-columns: 1fr; gap: 40px }
     .apropos-img-float { right: 16px; bottom: -16px }
     .avis-grid { grid-template-columns: repeat(2, 1fr) }
-    .footer-top { flex-direction: column; gap: 20px }
     .hero-side { display: none }
     .hero-corner { display: none }
     .nav-links { gap: 2px }
@@ -3151,7 +3149,6 @@ ul {
     .menu-toggle { display: flex }
     .nav-inner { padding: 8px 8px 8px 18px }
     .nav-cta .btn-reserve { padding: 8px 16px 8px 12px; font-size: .78rem }
-    .nav-cta .btn-reserve span:not(.dot) { display: inline }
 }
 
 @media(max-width:768px) {
@@ -3194,16 +3191,17 @@ ul {
     .logo-text { font-size: 1rem }
     .logo-mark { width: 30px; height: 30px; font-size: 1rem }
 
-    .categories-grid { grid-template-columns: repeat(2, 1fr) }
     .menu-grid { grid-template-columns: 1fr }
     .galerie-grid { grid-template-columns: 1fr; grid-auto-rows: 200px }
     .galerie-tall { grid-row: span 1 }
     .avis-grid { grid-template-columns: 1fr }
     .contact-grid { grid-template-columns: 1fr }
+
+    /* Reservation form — stack all fields */
     .form-row { grid-template-columns: 1fr }
-    .newsletter-wrap { flex-direction: column; text-align: center; padding: 28px 20px }
-    .newsletter-form { flex-direction: column; width: 100% }
-    .newsletter-form input { width: 100% }
+    .res-form { padding: 24px 16px }
+    .res-form input,
+    .res-form select { font-size: 16px }
 
     .hero { padding: 120px 0 80px; min-height: 100vh }
     .hero h1 { font-size: clamp(2.4rem, 9vw, 3.6rem) }
@@ -3212,10 +3210,6 @@ ul {
     .hero-tag .tag-sep { display: none }
     .hero-buttons { flex-direction: column; align-items: stretch; padding: 0 20px }
     .hero-buttons a { justify-content: center }
-
-
-
-
     .hero-scroll { display: none }
 
     .apropos-badge { width: 80px; height: 80px; font-size: 1.4rem; top: -10px; left: -10px }
@@ -3224,14 +3218,38 @@ ul {
     .admin-login-row input { width: 100% }
     .admin-tabs { gap: 4px }
     .admin-tab { padding: 7px 12px; font-size: .78rem }
+
+    /* Cart */
+    .cart-drawer { width: 100vw }
+    .customize-img { height: 160px }
+    .customize-content { padding: 20px }
+    .order-type { grid-template-columns: 1fr }
+
+    /* Contact cards */
+    .contact-card { padding: 16px }
+    .cc-icon { min-width: 44px; height: 44px; border-radius: 12px }
+
+    /* Section spacing */
+    .menu-section,
+    .galerie-section,
+    .apropos-section,
+    .avis-section,
+    .reservation-section,
+    .contact-section { padding: 60px 0 }
+    .section-header { margin-bottom: 36px }
 }
 
 @media(max-width:480px) {
-    .categories-grid { gap: 10px }
-    .cat-card { padding: 20px 8px }
-    .cat-emoji { font-size: 2rem }
-    .res-form { padding: 20px 14px }
-    .contact-form-wrap { padding: 24px }
+    .res-form { padding: 18px 12px }
+    .contact-form-wrap { padding: 20px 16px }
     .hero { min-height: auto; padding: 110px 0 60px }
     .gallery-admin-list { grid-template-columns: repeat(2, 1fr) }
+    .cart-fab { width: 50px; height: 50px; bottom: 16px; left: 16px }
+    .hero-divider .hd-line { width: 50px }
+    .container { padding: 0 16px }
+    .apropos-img-main img { height: 280px }
+    .apropos-img-float { width: 120px; height: 120px; right: 10px; bottom: -10px }
+    .reservation-content h2 { font-size: 1.8rem }
+    .contact-form-wrap h3 { font-size: 1.05rem }
+    .section-header h2 { font-size: 1.8rem }
 }
